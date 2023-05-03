@@ -19,10 +19,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.composekotlin.compose.CircleItem
-import com.example.composekotlin.compose.LazyRowItem
-import com.example.composekotlin.compose.ListItem
-import com.example.composekotlin.compose.MainScreen
+import com.example.composekotlin.compose.*
 import com.example.composekotlin.ui.theme.ComposeKotlinTheme
 
 
@@ -32,7 +29,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            MainScreen()
+            ScafoldScreen(applicationContext)
 
         }
     }
